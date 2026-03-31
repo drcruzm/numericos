@@ -1,0 +1,76 @@
+/* 1. Fondo de la página 0F0F0F 7aa4bf */
+body {
+  background-color: #0F0F0F !important;
+}
+
+/* 2. Textos principales (AUMENTO DE TAMAÑO) FFCC00 D8CC00 */
+.main-container, p, li {
+    color: #FFCC00 !important; /* Texto blanco */
+    font-size: 18px !important; /* <-- Aumenta el número si lo quieres aún más grande */
+    line-height: 1.6 !important; /* Da un poco más de aire entre las líneas del párrafo */
+}
+
+/* 3. Encabezados Principales (Título y H1) */
+h1.title, h1 {
+  color: #ffffff !important; 
+  border-bottom: 2px solid #ffffff !important; 
+  padding-bottom: 7px;
+}
+
+/* 4. Subtítulos (H2, H3, etc.) */
+h2, h3, h4 {
+  color: #d6efff !important; /* Celeste claro */
+  margin-top: 30px !important; /* Da un poco de espacio antes de cada nuevo tema */
+}
+
+/* 5. Enlaces en el texto normal */
+.main-container a {
+  color: #aae0ff; 
+  text-decoration: underline;
+}
+
+.main-container a.list-group-item,
+.main-container a.dropdown-toggle,
+.main-container a.btn {
+    text-decoration: none;
+}
+
+/* 6. CAJAS DE CÓDIGO (Reparadas para que vuelva el fondo gris) */
+pre, .sourceCode {
+  background-color: #f4f1f1 !important; /* Fondo gris muy claro f8f9fa*/
+  border: 1px solid #ced4da !important; /* Borde gris */
+  border-radius: 5px !important;
+  padding: 12px !important;
+  display: block !important;
+}
+
+/* Texto dentro de las cajas de código */
+pre code, .sourceCode code {
+  color: #212529 !important; /* Texto oscuro para que se lea bien en el fondo gris */
+  font-size: 15px !important; /* Tamaño de letra del código un poco más grande */
+  background-color: transparent !important; /* Evita conflicto de dobles fondos */
+}
+
+/* 7. Menú lateral (TOC) - Se mantiene igual, ya funcionaba bien */
+#TOC {
+  background-color: #ffffff !important; 
+  border: 1px solid #dee2e6 !important;
+  border-radius: 5px !important;
+}
+
+#TOC .list-group-item {
+    color: #084180 !important; 
+    background-color: #ffffff !important;
+    font-size: 15px !important; 
+}
+
+#TOC .list-group-item:hover {
+    color: #17a2b8 !important; 
+    background-color: #e9ecef !important;
+}
+
+#TOC .list-group-item.active {
+    color: #ffffff !important;
+    background-color: #17a2b8 !important; 
+    border-color: #17a2b8 !important;
+}
